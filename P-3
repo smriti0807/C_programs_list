@@ -1,0 +1,31 @@
+#include <stdio.h>
+int a=110;
+void fun(){
+    int b=10;
+    printf("global :%d\n",a);
+    printf("local :%d\n",b);
+}
+void kittu(){
+     static int c=100;
+     int d=200;
+     d++;
+     printf("normal %d\n",d);
+     c++;
+     printf("static :%d\n",c);
+}
+int main() {
+   // Write C code here
+    //Example of size of operator
+    printf("Size of integer %d\n",sizeof(int));
+     printf("Size of integer %d\n",sizeof(char));
+      printf("Size of integer %d\n",sizeof(double));
+      printf("Size of integer %d",sizeof(long double));
+    
+    //types of veriable
+     printf("global :%d\n",a);
+    // printf("static :%d\n",c);
+     fun();
+     kittu();
+     kittu();
+    return 0;
+}
